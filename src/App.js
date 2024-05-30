@@ -29,7 +29,7 @@ function App() {
     <div className='App'>
       <div className='gallery'>
         {items.map(item => (
-          <motion.div
+          <motion.div key={item.id}
             style={{
               backgroundImage: `url(${item.image})`,
               backgroundPosition: 'center',
